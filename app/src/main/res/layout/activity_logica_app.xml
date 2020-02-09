@@ -6,13 +6,229 @@
     android:layout_height="match_parent"
     tools:context=".LogicaAppActivity">
 
+    <EditText
+        android:id="@+id/answerThree"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/answer_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirdRowTrueB"
+        app:layout_constraintTop_toBottomOf="@+id/answerTwo" />
+
     <TextView
+        android:id="@+id/thirdRowFalseA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/text_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/fourthRowFalseA"
+        app:layout_constraintEnd_toStartOf="@+id/thirdRowTrueB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondRowTrueA" />
+
+    <TextView
+        android:id="@+id/thirdRowTrueB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/forthRowFalseB"
+        app:layout_constraintEnd_toStartOf="@+id/answerThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirdRowFalseA"
+        app:layout_constraintTop_toBottomOf="@+id/secondRowFalseB" />
+
+    <TextView
+        android:id="@+id/secondRowFalseB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowTrueB"
+        app:layout_constraintEnd_toStartOf="@+id/answerTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/secondRowTrueA"
+        app:layout_constraintTop_toBottomOf="@+id/firstRowTrueB" />
+
+    <TextView
+        android:id="@+id/secondRowTrueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowFalseA"
+        app:layout_constraintEnd_toStartOf="@+id/secondRowFalseB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstRowTrueA" />
+
+    <EditText
+        android:id="@+id/answerOne"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/answer_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firstRowTrueB"
+        app:layout_constraintTop_toBottomOf="@+id/aBText" />
+
+    <TextView
+        android:id="@+id/firstRowTrueB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowFalseB"
+        app:layout_constraintEnd_toStartOf="@+id/answerOne"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firstRowTrueA"
+        app:layout_constraintTop_toBottomOf="@+id/bText" />
+
+    <TextView
+        android:id="@+id/bText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowTrueB"
+        app:layout_constraintEnd_toStartOf="@+id/aBText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/aText"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/firstRowTrueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowTrueA"
+        app:layout_constraintEnd_toStartOf="@+id/firstRowTrueB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aText" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="265dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_title"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/btn_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/aText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowTrueA"
+        app:layout_constraintEnd_toStartOf="@+id/bText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/aBText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_AB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bText"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <EditText
+        android:id="@+id/answerTwo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/answer_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/secondRowFalseB"
+        app:layout_constraintTop_toBottomOf="@+id/answerOne" />
+
+    <EditText
+        android:id="@+id/answerFour"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/answer_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/forthRowFalseB"
+        app:layout_constraintTop_toBottomOf="@+id/answerThree" />
+
+    <TextView
+        android:id="@+id/forthRowFalseB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toStartOf="@+id/answerFour"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fourthRowFalseA"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRowTrueB" />
+
+    <TextView
+        android:id="@+id/fourthRowFalseA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toStartOf="@+id/forthRowFalseB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRowFalseA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

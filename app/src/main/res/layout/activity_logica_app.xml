@@ -42,9 +42,9 @@
         android:text="@string/text_true"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/forthRowFalseB"
-        app:layout_constraintEnd_toStartOf="@+id/answerThree"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/thirdRowFalseA"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondRowFalseB" />
 
     <TextView
@@ -54,9 +54,9 @@
         android:text="@string/text_false"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/thirdRowTrueB"
-        app:layout_constraintEnd_toStartOf="@+id/answerTwo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/secondRowTrueA"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstRowTrueB" />
 
     <TextView
@@ -94,9 +94,9 @@
         android:text="@string/text_true"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/secondRowFalseB"
-        app:layout_constraintEnd_toStartOf="@+id/answerOne"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/firstRowTrueA"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bText" />
 
     <TextView
@@ -107,9 +107,9 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/firstRowTrueB"
-        app:layout_constraintEnd_toStartOf="@+id/aBText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/aText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
     <TextView
@@ -213,9 +213,9 @@
         android:text="@string/text_false"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
-        app:layout_constraintEnd_toStartOf="@+id/answerFour"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/fourthRowFalseA"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thirdRowTrueB" />
 
     <TextView
